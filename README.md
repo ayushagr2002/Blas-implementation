@@ -51,3 +51,17 @@ void cblas_dgemm(const enum CBLAS_ORDER Order, const enum CBLAS_TRANSPOSE TransA
                  const int lda, const double *B, const int ldb,
                  const double beta, double *C, const int ldc);
 ```
+To run, follow the below steps:
+- `cd BLAS_ROUTINES`
+- `make`
+- `./a.out <name of the routine here>`
+
+The output shows the GFLOPS and Memory Bandwidth for different vector and Matrix Sizes.
+
+## Stencil Computation
+Applies a `k X k` stencil to an `HD` or `UHD` image.
+
+To run, 
+- `cd STENCIL`
+- `make`
+- `./stencil`
